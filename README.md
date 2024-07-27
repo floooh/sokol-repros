@@ -1,6 +1,6 @@
 # sokol-repros
 
-Common repository for sokol-related bug reproduders.
+Common repository for sokol-related bug reproducers.
 
 ## Sample Links
 
