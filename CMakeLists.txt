@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.5)
+project(sokol-repros)
+set(CMAKE_C_STANDARD 11)
+
+macro(build_sample target src)
+    add_executable(${target} ${src})
+    target_compile_options(${target} PUBLIC -Wall -Wextra -Wsign-compare)
+    if (CMAKE_SYSTEM_NAME STREQUAL Emscripten)
+        set(CMAKE_EXECUTABLE_SUFFIX ".html")
+        target_link_options(${target} PUBLIC --shell-file ../shell.html)
+        target_link_options(${target} PUBLIC -sUSE_WEBGL2=1 -sNO_FILESYSTEM=1 -sASSERTIONS=0 -sMALLOC=emmalloc)
+    endif()
+endmacro()
+
+build_sample("chrome127-offscreen" "src/chrome127-offscreen/main.c")
