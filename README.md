@@ -4,6 +4,8 @@ Common repository for sokol-related bug reproducers.
 
 ## Sample Links
 
+NOTE: the below sample links only work from the Github Pages URL: [https://floooh.github.io/sokol-repros/](https://floooh.github.io/sokol-repros/)
+
 * [chrome127-offscreen](deploy/chrome127-offscreen.html) - [Chrome Issue](https://issues.chromium.org/issues/355605685)
 
 
