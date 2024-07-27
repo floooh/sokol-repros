@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(sokol-repros)
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../deploy)
 
 macro(build_sample target src)
     add_executable(${target} ${src})
