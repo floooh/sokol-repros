@@ -2,6 +2,11 @@
 
 Common repository for sokol-related bug reproduders.
 
+## Sample Links
+
+* [chrome127-offscreen](deploy/chrome127-offscreen.html) - [Chrome Issue](https://issues.chromium.org/issues/355605685)
+
+
 ## Clone and Build
 
 With `cmake`, `emcmake` and `emrun` in the path:
