@@ -10,6 +10,8 @@ NOTE: the below sample links only work from the Github Pages URL: [https://flooo
     * WASM version: [chrome127-offscreen](deploy/chrome127-offscreen.html)
     * JS version: [chrome127-offscreen-js](js/chrome127-offscreen-js.html)
 
+* [WebGPU Dynamic Offset Oddity](js/wgpu-dyn-offsets.html)
+
 ## Clone and Build
 
 With `cmake`, `emcmake` and `emrun` in the path:
