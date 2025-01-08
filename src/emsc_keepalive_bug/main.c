@@ -16,9 +16,9 @@ int main() {
         }
     });
     // call that function a couple of times from js this works as expected
-    // without Closure pass, but with the Closure pass enabled the
+    // without optimization, but with optimization (-O1 or higher) the
     // Javascript shim is only called once and resets the Module['_cfunc'] item
-    // after the first call
+    // on the first call
     EM_ASM({
         for (let i = 0; i < 3; i++) {
             Module['_cfunc']();
