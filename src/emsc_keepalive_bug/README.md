@@ -1,3 +1,5 @@
+Related Emscripten ticket: https://github.com/emscripten-core/emscripten/issues/23337
+
 First build and run without optimization, note the terminal output:
 
 ```
